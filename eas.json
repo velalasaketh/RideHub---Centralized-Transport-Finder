@@ -1,0 +1,32 @@
+{
+  "cli": {
+    "version": ">= 16.32.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY": "AIzaSyAd5gy4bMJVJXcbj6ZjUFbTpWWtehQR-YQ",
+        "EXPO_PUBLIC_RESEND_API_KEY": "re_W2nSUMqy_NMCmji13YbdP4L1fp83enQ5X"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_GOOGLE_MAPS_API_KEY": "AIzaSyAd5gy4bMJVJXcbj6ZjUFbTpWWtehQR-YQ",
+        "EXPO_PUBLIC_RESEND_API_KEY": "re_W2nSUMqy_NMCmji13YbdP4L1fp83enQ5X"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
